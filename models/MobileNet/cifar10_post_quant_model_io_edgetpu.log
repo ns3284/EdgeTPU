@@ -1,0 +1,14 @@
+Edge TPU Compiler version 2.0.267685300
+Input: saved_model/cifar10_post_quant_model_io.tflite
+Output: cifar10_post_quant_model_io_edgetpu.tflite
+
+Operator                       Count      Status
+
+MEAN                           1          Mapped to Edge TPU
+SOFTMAX                        1          Mapped to Edge TPU
+PAD                            5          Mapped to Edge TPU
+QUANTIZE                       1          Operation is otherwise supported, but not mapped due to some unspecified limitation
+CONV_2D                        15         Mapped to Edge TPU
+DEPTHWISE_CONV_2D              13         Mapped to Edge TPU
+RESHAPE                        2          Mapped to Edge TPU
+DEQUANTIZE                     1          Operation is working on an unsupported data type
